@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science&tech</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        .text-sports{
+            text-align: center;
+            margin: 5px;
+            font-family: nyt-imperial;
+        }
+    
+        .add-border{
+            border-bottom: 1px solid black;
+        }
+    
+        .text-line{
+            background: #f9f9f9;
+            font-family: nyt-imperial;
+        }
+    
+        .img-sports{
+            width: 285px;
+        }
+    
+        .update-text{
+            margin-top: 70px;
+        }
+    
+    
+        .modal {
+            background-image: linear-gradient(rgb(35, 79, 71) 0%, rgb(36, 121, 106) 100.2%)
+        }
+    
+        .modal-title {
+            font-weight: 900
+        }
+    
+        .modal-content {
+            border-radius: 13px
+        }
+    
+        .modal-body {
+            color: #3b3b3b
+        }
+    
+        .img-thumbnail {
+            border-radius: 33px;
+            width: 61px;
+            height: 61px
+        }
+    
+        .fab:before {
+            position: relative;
+            top: 13px
+        }
+    
+        .smd {
+            width: 200px;
+            font-size: small;
+            text-align: center
+        }
+    
+        .modal-footer {
+            display: block
+        }
+    
+        .ur {
+            border: none;
+            background-color: #e6e2e2;
+            border-bottom-left-radius: 4px;
+            border-top-left-radius: 4px
+        }
+    
+        .cpy {
+            border: none;
+            background-color: #e6e2e2;
+            border-bottom-right-radius: 4px;
+            border-top-right-radius: 4px;
+            cursor: pointer;
+        }
+    
+        button.focus,
+        button:focus {
+            outline: 0;
+            box-shadow: none !important
+        }
+    
+        .ur.focus,
+        .ur:focus {
+            outline: 0;
+            box-shadow: none !important
+        }
+    
+        .message {
+            font-size: 11px;
+            color: #ee5535
+        }
+    
+        .sm-icons{
+            gap: 1rem;
+        }
+    
+        .anchor{
+            text-decoration: none !important;
+            color: black !important;
+        }
+        .navbar-nav{
+            font-family: khand,sans-serif;
+            font-weight: bold;
+        }
+        .logo{
+            width: 200px;
+            height: 80px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="text-center">
+                <a href="#"><img class="img-fluid logo" src="img/newsportal.png" alt=""></a>
+            </div>
+        </div>
+      
+      <div class="container mt-2" style="border-bottom: 2px solid black; border-top: 1px solid gray;">
+        <div class="row d-flex justify-content-center">
+          <nav class="navbar navbar-expand-lg d-flex">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              ☰<span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link " href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="business.html">Business</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="politics.html">Politics</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="covid.html">Covid-19</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="science&tech.html">Science & tech</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="health.html">Health</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="sports.html">Sports</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="entertainment.html">Entertainment</a>
+                </li>               
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="market.html">Market</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="society.html">Society</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="blog.html">Blog</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+        <h2 class="font-weight-bold">Science & Tech</h2>
+        <div class="row">
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 add-border">
+                <a class="anchor" href="">
+                    <div class="row add-border">
+                        <img class="img-fluid" src="img/science.jpg" alt="" width="800px">
+                        <div class="container text-center bg-light mt-2">
+                            <h3 class="font-weight-bold">Ranking every college football bowl game, from Orange to Frisco</h3>
+                            <p class="text-sports">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, nihil! Voluptates dolor quibusdam, consectetur error beatae doloribus perspiciatis delectus quasi inventore repudiandae maxime quidem cupiditate. Mollitia praesentium ut nemo blanditiis!</p>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="row mt-4">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <a class="anchor" href="">
+                            <img class="img-fluid" src="img/tech.jpg" alt="" style="width: 445px; height: 200px;">
+                            <div class="text-center bg-light mt-2">
+                                <h6 class="font-weight-bold">Elon Musk to launch Tesla moblie.</h6>
+                                <p class="text-line">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt porro voluptate dolorem assumenda, perferendis aliquam?</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <a class="anchor" href="">
+                            <img class="img-fluid" src="img/tech1.webp" alt="" style="width: 445px; height: 200px;">
+                            <div class="text-center bg-light mt-2">
+                                <h6 class="font-weight-bold">Bill Gate's to make Malaria free nation.</h6>
+                                <p class="text-line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi commodi facilis, ad maiores deserunt architecto fugiat.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                <h5 class="font-weight-bold">Latest Science&Tech News</h5>
+                <a class="anchor" href="">
+                    <div class="d-flex border-bottom mt-2">
+                        <img src="img/tech2.jpg" alt="" style="width: 150px; height: 80px;">
+                        <div>
+                            <h6 class="text-sports font-weight-bold">Warriors roads to final</h6>
+                            <p class="text-sports">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="anchor" href="">
+                    <div class="d-flex border-bottom mt-2">
+                        <img class="mt-2" src="img/tech.jpg" alt="" style="width: 150px; height: 90px;">
+                        <div>
+                            <h6 class="text-sports font-weight-bold">Tiger made it through semis</h6>
+                            <p class="text-sports">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="anchor" href="">
+                    <div class="d-flex border-bottom mt-2">
+                        <img class="mt-2" src="img/tech2.jpg" alt="" style="width: 150px; height: 70px;">
+                        <div>
+                            <h6 class="text-sports font-weight-bold">Australia wins Tri-series</h6>
+                            <p class="text-sports">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- <a class="anchor" href="">
+                    <div class="d-flex border-bottom">
+                        <img class="mt-2" src="img/business6.jpg" alt="" style="width: 150px; height: 100px;">
+                        <div>
+                            <h6 class="text-sports font-weight-bold">Tiger made it through semis</h6>
+                            <p class="text-sports">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </a> -->
+                <a class="anchor" href="">
+                    <div class="d-flex border-bottom mt-2">
+                        <img class="mt-2" src="img/tech.jpg" alt="" style="width: 150px; height: 90px;">
+                        <div>
+                            <h6 class="text-sports font-weight-bold">Tiger made it through semis</h6>
+                            <p class="text-sports">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="anchor" href="">
+                    <div class="d-flex border-bottom mt-2">
+                        <img class="mt-2" src="img/business4.jpg" alt="" style="width: 150px; height: 90px;">
+                        <div>
+                            <h6 class="text-sports font-weight-bold">Tiger made it through semis</h6>
+                            <p class="text-sports">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="anchor" href="">
+                    <div class="d-flex border-bottom mt-2">
+                        <img class="mt-2" src="img/business4.jpg" alt="" style="width: 150px; height: 90px;">
+                        <div>
+                            <h6 class="text-sports font-weight-bold">Tiger made it through semis</h6>
+                            <p class="text-sports">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="anchor" href="">
+                    <div class="d-flex border-bottom mt-2">
+                        <img class="mt-2" src="img/business4.jpg" alt="" style="width: 150px; height: 90px;">
+                        <div>
+                            <h6 class="text-sports font-weight-bold">Tiger made it through semis</h6>
+                            <p class="text-sports">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row mt-2 add-border">           
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <a class="anchor" href="">
+                    <img class="img-fluid" src="img/sports6.jpg" alt="">
+                    <div class="text-center bg-light mt-2">
+                        <h6 class="font-weight-bold">World cup to held in QATAR</h6>
+                        <p class="text-line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi commodi facilis.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <a class="anchor" href="">
+                    <img class="img-fluid" src="img/sports6.jpg" alt="">
+                    <div class="text-center bg-light mt-2">
+                        <h6 class="font-weight-bold">World cup to held in QATAR</h6>
+                        <p class="text-line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi commodi facilis.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <a class="anchor" href="">
+                    <img class="img-fluid" src="img/sports6.jpg" alt="">
+                    <div class="text-center bg-light mt-2">
+                        <h6 class="font-weight-bold">World cup to held in QATAR</h6>
+                        <p class="text-line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi commodi facilis.</p>
+                    </div>
+                </a>               
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <a class="anchor" href="">
+                    <img class="img-fluid" src="img/sports6.jpg" alt="">
+                    <div class="text-center bg-light mt-2">
+                        <h6 class="font-weight-bold">World cup to held in QATAR</h6>
+                        <p class="text-line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi commodi facilis.</p>
+                    </div>
+                </a>               
+            </div>
+        </div>
+
+        <div class="row mt-2 add-border">           
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <a class="anchor" href="">
+                    <img class="img-fluid" src="img/sports6.jpg" alt="">
+                    <div class="text-center bg-light mt-2">
+                        <h6 class="font-weight-bold">World cup to held in QATAR</h6>
+                        <p class="text-line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi commodi facilis.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <a class="anchor" href="">
+                    <img class="img-fluid" src="img/sports6.jpg" alt="">
+                    <div class="text-center bg-light mt-2">
+                        <h6 class="font-weight-bold">World cup to held in QATAR</h6>
+                        <p class="text-line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi commodi facilis.</p>
+                    </div>
+                </a>               
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <a class="anchor" href="">
+                    <img class="img-fluid" src="img/sports6.jpg" alt="">
+                    <div class="text-center bg-light mt-2">
+                        <h6 class="font-weight-bold">World cup to held in QATAR</h6>
+                        <p class="text-line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi commodi facilis.</p>
+                    </div>
+                </a>               
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <a class="anchor" href="">
+                    <img class="img-fluid" src="img/sports6.jpg" alt="">
+                    <div class="text-center bg-light mt-2">
+                        <h6 class="font-weight-bold">World cup to held in QATAR</h6>
+                        <p class="text-line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi commodi facilis.</p>
+                    </div>
+                </a>               
+            </div>
+        </div>
+
+        <div class="Eighth-section add-border m-0 p-0">
+            <h4 class="font-weight-bold mt-2">Trending Videos</h4>
+            <div class="row">
+                <div class="col-xl-3 col-md-3 col-sm-3">
+                    <a class="anchor" href="">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="" allowfullscreen></iframe>
+                        </div>                    
+                        <h6 class="text-center font-weight-bold">Political Issues</h6>
+                    </a>       
+                </div>
+                <div class="col-xl-3 col-md-3 col-sm-3">
+                    <a class="anchor" href="">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="" allowfullscreen></iframe>
+                        </div>
+                        <h6 class="text-center font-weight-bold">Internal conflict</h6>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-md-3 col-sm-3">
+                    <a class="anchor" href="">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="" allowfullscreen></iframe>
+                        </div>
+                        <h6 class="text-center font-weight-bold">Propaganda</h6>
+                    </a>               
+                </div>
+                <div class="col-xl-3 col-md-3 col-sm-3">
+                    <a class="anchor" href="">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="" allowfullscreen></iframe>
+                        </div>
+                        <h6 class="text-center font-weight-bold">Less development</h6>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <h3 class="font-weight-bold">More updates</h3>            
+            <div class="col-md-12">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <a href="">
+                            <img class="img-fluid mt-1" src="img/sports7.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-5 mt-4">
+                        <a class="anchor" href="">
+                            <h6 class="text-center font-weight-bold">Formula 1 Holds Its Breath</h6>
+                            <p class="text-muted ml-4">It has not had a season like this in years because Lewis Hamilton has dominated. Not this year. He or Max will become champion on Sunday.</p>
+                        </a>
+                        <div class="sm-icons justify-content-center d-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook ml-1" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                            </svg>
+    
+                            <div class='justify-content-center'> 
+                                <a data-toggle="modal" data-target="#exampleModal"> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content col-12">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Share</h5> <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="icon-container1 d-flex">
+                                                <div class="smd"> <i class="img-thumbnail fab fa-reddit-alien fa-2x" style="color: #FF5700;background-color: #fdd9ce;"></i>
+                                                    <p>Reddit</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-discord fa-2x " style="color: #738ADB;background-color: #d8d8d8;"></i>
+                                                    <p>Discord</p>
+                                                </div>
+                                            </div>
+                                            <div class="icon-container2 d-flex">
+                                                <div class="smd"> <i class="img-thumbnail fab fa-whatsapp fa-2x" style="color: #25D366;background-color: #cef5dc;"></i>
+                                                    <p>Whatsapp</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-facebook-messenger fa-2x" style="color: #3b5998;background-color: #eceff5;"></i>
+                                                    <p>Messenger</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-telegram fa-2x" style="color: #4c6ef5;background-color: aliceblue"></i>
+                                                    <p>Telegram</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-weixin fa-2x" style="color: #7bb32e;background-color: #daf1bc;"></i>
+                                                    <p>WeChat</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer"> <label style="font-weight: 600">Page Link <span class="message"></span></label><br />
+                                            <div class="row"> <input class="col-10 ur" type="url" placeholder="https://www.arcardio.app/acodyseyy" id="myInput" aria-describedby="inputGroup-sizing-default" style="height: 40px;"> <button class="cpy" onclick="myFunction()"><i class="far fa-clone"></i></button> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <a href="">
+                            <img class="img-fluid mt-1" src="img/sports7.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-5 mt-4">
+                        <a class="anchor" href="">
+                            <h6 class="text-center font-weight-bold">Formula 1 Holds Its Breath</h6>
+                            <p class="text-muted ml-4">It has not had a season like this in years because Lewis Hamilton has dominated. Not this year. He or Max will become champion on Sunday.</p>
+                        </a>
+                        <div class="sm-icons justify-content-center d-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook ml-1" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                            </svg>
+    
+                            <div class='justify-content-center'> 
+                                <a data-toggle="modal" data-target="#exampleModal"> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content col-12">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Share</h5> <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="icon-container1 d-flex">
+                                                <div class="smd"> <i class="img-thumbnail fab fa-reddit-alien fa-2x" style="color: #FF5700;background-color: #fdd9ce;"></i>
+                                                    <p>Reddit</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-discord fa-2x " style="color: #738ADB;background-color: #d8d8d8;"></i>
+                                                    <p>Discord</p>
+                                                </div>
+                                            </div>
+                                            <div class="icon-container2 d-flex">
+                                                <div class="smd"> <i class="img-thumbnail fab fa-whatsapp fa-2x" style="color: #25D366;background-color: #cef5dc;"></i>
+                                                    <p>Whatsapp</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-facebook-messenger fa-2x" style="color: #3b5998;background-color: #eceff5;"></i>
+                                                    <p>Messenger</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-telegram fa-2x" style="color: #4c6ef5;background-color: aliceblue"></i>
+                                                    <p>Telegram</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-weixin fa-2x" style="color: #7bb32e;background-color: #daf1bc;"></i>
+                                                    <p>WeChat</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer"> <label style="font-weight: 600">Page Link <span class="message"></span></label><br />
+                                            <div class="row"> <input class="col-10 ur" type="url" placeholder="https://www.arcardio.app/acodyseyy" id="myInput" aria-describedby="inputGroup-sizing-default" style="height: 40px;"> <button class="cpy" onclick="myFunction()"><i class="far fa-clone"></i></button> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <a href="">
+                            <img class="img-fluid mt-1" src="img/sports7.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-5 mt-4">
+                        <a class="anchor" href="">
+                            <h6 class="text-center font-weight-bold">Formula 1 Holds Its Breath</h6>
+                            <p class="text-muted ml-4">It has not had a season like this in years because Lewis Hamilton has dominated. Not this year. He or Max will become champion on Sunday.</p>
+                        </a>
+                        <div class="sm-icons justify-content-center d-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook ml-1" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                            </svg>
+    
+                            <div class='justify-content-center'> 
+                                <a data-toggle="modal" data-target="#exampleModal"> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content col-12">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Share</h5> <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="icon-container1 d-flex">
+                                                <div class="smd"> <i class="img-thumbnail fab fa-reddit-alien fa-2x" style="color: #FF5700;background-color: #fdd9ce;"></i>
+                                                    <p>Reddit</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-discord fa-2x " style="color: #738ADB;background-color: #d8d8d8;"></i>
+                                                    <p>Discord</p>
+                                                </div>
+                                            </div>
+                                            <div class="icon-container2 d-flex">
+                                                <div class="smd"> <i class="img-thumbnail fab fa-whatsapp fa-2x" style="color: #25D366;background-color: #cef5dc;"></i>
+                                                    <p>Whatsapp</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-facebook-messenger fa-2x" style="color: #3b5998;background-color: #eceff5;"></i>
+                                                    <p>Messenger</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-telegram fa-2x" style="color: #4c6ef5;background-color: aliceblue"></i>
+                                                    <p>Telegram</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-weixin fa-2x" style="color: #7bb32e;background-color: #daf1bc;"></i>
+                                                    <p>WeChat</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer"> <label style="font-weight: 600">Page Link <span class="message"></span></label><br />
+                                            <div class="row"> <input class="col-10 ur" type="url" placeholder="https://www.arcardio.app/acodyseyy" id="myInput" aria-describedby="inputGroup-sizing-default" style="height: 40px;"> <button class="cpy" onclick="myFunction()"><i class="far fa-clone"></i></button> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <a href="">
+                            <img class="img-fluid mt-1" src="img/sports7.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-5 mt-4">
+                        <a class="anchor" href="">
+                            <h6 class="text-center font-weight-bold">Formula 1 Holds Its Breath</h6>
+                            <p class="text-muted ml-4">It has not had a season like this in years because Lewis Hamilton has dominated. Not this year. He or Max will become champion on Sunday.</p>
+                        </a>
+                        <div class="sm-icons justify-content-center d-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook ml-1" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                            </svg>
+    
+                            <div class='justify-content-center'> 
+                                <a data-toggle="modal" data-target="#exampleModal"> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content col-12">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Share</h5> <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="icon-container1 d-flex">
+                                                <div class="smd"> <i class="img-thumbnail fab fa-reddit-alien fa-2x" style="color: #FF5700;background-color: #fdd9ce;"></i>
+                                                    <p>Reddit</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-discord fa-2x " style="color: #738ADB;background-color: #d8d8d8;"></i>
+                                                    <p>Discord</p>
+                                                </div>
+                                            </div>
+                                            <div class="icon-container2 d-flex">
+                                                <div class="smd"> <i class="img-thumbnail fab fa-whatsapp fa-2x" style="color: #25D366;background-color: #cef5dc;"></i>
+                                                    <p>Whatsapp</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-facebook-messenger fa-2x" style="color: #3b5998;background-color: #eceff5;"></i>
+                                                    <p>Messenger</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-telegram fa-2x" style="color: #4c6ef5;background-color: aliceblue"></i>
+                                                    <p>Telegram</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-weixin fa-2x" style="color: #7bb32e;background-color: #daf1bc;"></i>
+                                                    <p>WeChat</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer"> <label style="font-weight: 600">Page Link <span class="message"></span></label><br />
+                                            <div class="row"> <input class="col-10 ur" type="url" placeholder="https://www.arcardio.app/acodyseyy" id="myInput" aria-describedby="inputGroup-sizing-default" style="height: 40px;"> <button class="cpy" onclick="myFunction()"><i class="far fa-clone"></i></button> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <a href="">
+                            <img class="img-fluid mt-1" src="img/sports7.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-5 mt-4">
+                        <a class="anchor" href="">
+                            <h6 class="text-center font-weight-bold">Formula 1 Holds Its Breath</h6>
+                            <p class="text-muted ml-4">It has not had a season like this in years because Lewis Hamilton has dominated. Not this year. He or Max will become champion on Sunday.</p>
+                        </a>
+                        <div class="sm-icons justify-content-center d-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook ml-1" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                            </svg>
+    
+                            <div class='justify-content-center'> 
+                                <a data-toggle="modal" data-target="#exampleModal"> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content col-12">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Share</h5> <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="icon-container1 d-flex">
+                                                <div class="smd"> <i class="img-thumbnail fab fa-reddit-alien fa-2x" style="color: #FF5700;background-color: #fdd9ce;"></i>
+                                                    <p>Reddit</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-discord fa-2x " style="color: #738ADB;background-color: #d8d8d8;"></i>
+                                                    <p>Discord</p>
+                                                </div>
+                                            </div>
+                                            <div class="icon-container2 d-flex">
+                                                <div class="smd"> <i class="img-thumbnail fab fa-whatsapp fa-2x" style="color: #25D366;background-color: #cef5dc;"></i>
+                                                    <p>Whatsapp</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-facebook-messenger fa-2x" style="color: #3b5998;background-color: #eceff5;"></i>
+                                                    <p>Messenger</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-telegram fa-2x" style="color: #4c6ef5;background-color: aliceblue"></i>
+                                                    <p>Telegram</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-weixin fa-2x" style="color: #7bb32e;background-color: #daf1bc;"></i>
+                                                    <p>WeChat</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer"> <label style="font-weight: 600">Page Link <span class="message"></span></label><br />
+                                            <div class="row"> <input class="col-10 ur" type="url" placeholder="https://www.arcardio.app/acodyseyy" id="myInput" aria-describedby="inputGroup-sizing-default" style="height: 40px;"> <button class="cpy" onclick="myFunction()"><i class="far fa-clone"></i></button> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <a href="">
+                            <img class="img-fluid mt-1" src="img/sports7.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-5 mt-4">
+                        <a class="anchor" href="">
+                            <h6 class="text-center font-weight-bold">Formula 1 Holds Its Breath</h6>
+                            <p class="text-muted ml-4">It has not had a season like this in years because Lewis Hamilton has dominated. Not this year. He or Max will become champion on Sunday.</p>
+                        </a>
+                        <div class="sm-icons justify-content-center d-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook ml-1" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                            </svg>
+    
+                            <div class='justify-content-center'> 
+                                <a data-toggle="modal" data-target="#exampleModal"> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content col-12">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Share</h5> <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="icon-container1 d-flex">
+                                                <div class="smd"> <i class="img-thumbnail fab fa-reddit-alien fa-2x" style="color: #FF5700;background-color: #fdd9ce;"></i>
+                                                    <p>Reddit</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-discord fa-2x " style="color: #738ADB;background-color: #d8d8d8;"></i>
+                                                    <p>Discord</p>
+                                                </div>
+                                            </div>
+                                            <div class="icon-container2 d-flex">
+                                                <div class="smd"> <i class="img-thumbnail fab fa-whatsapp fa-2x" style="color: #25D366;background-color: #cef5dc;"></i>
+                                                    <p>Whatsapp</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-facebook-messenger fa-2x" style="color: #3b5998;background-color: #eceff5;"></i>
+                                                    <p>Messenger</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-telegram fa-2x" style="color: #4c6ef5;background-color: aliceblue"></i>
+                                                    <p>Telegram</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-weixin fa-2x" style="color: #7bb32e;background-color: #daf1bc;"></i>
+                                                    <p>WeChat</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer"> <label style="font-weight: 600">Page Link <span class="message"></span></label><br />
+                                            <div class="row"> <input class="col-10 ur" type="url" placeholder="https://www.arcardio.app/acodyseyy" id="myInput" aria-describedby="inputGroup-sizing-default" style="height: 40px;"> <button class="cpy" onclick="myFunction()"><i class="far fa-clone"></i></button> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <a href="">
+                            <img class="img-fluid mt-1" src="img/sports7.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-5 mt-4">
+                        <a class="anchor" href="">
+                            <h6 class="text-center font-weight-bold">Formula 1 Holds Its Breath</h6>
+                            <p class="text-muted ml-4">It has not had a season like this in years because Lewis Hamilton has dominated. Not this year. He or Max will become champion on Sunday.</p>
+                        </a>
+                        <div class="sm-icons justify-content-center d-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook ml-1" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                            </svg>
+    
+                            <div class='justify-content-center'> 
+                                <a data-toggle="modal" data-target="#exampleModal"> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content col-12">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Share</h5> <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="icon-container1 d-flex">
+                                                <div class="smd"> <i class="img-thumbnail fab fa-reddit-alien fa-2x" style="color: #FF5700;background-color: #fdd9ce;"></i>
+                                                    <p>Reddit</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-discord fa-2x " style="color: #738ADB;background-color: #d8d8d8;"></i>
+                                                    <p>Discord</p>
+                                                </div>
+                                            </div>
+                                            <div class="icon-container2 d-flex">
+                                                <div class="smd"> <i class="img-thumbnail fab fa-whatsapp fa-2x" style="color: #25D366;background-color: #cef5dc;"></i>
+                                                    <p>Whatsapp</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-facebook-messenger fa-2x" style="color: #3b5998;background-color: #eceff5;"></i>
+                                                    <p>Messenger</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-telegram fa-2x" style="color: #4c6ef5;background-color: aliceblue"></i>
+                                                    <p>Telegram</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-weixin fa-2x" style="color: #7bb32e;background-color: #daf1bc;"></i>
+                                                    <p>WeChat</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer"> <label style="font-weight: 600">Page Link <span class="message"></span></label><br />
+                                            <div class="row"> <input class="col-10 ur" type="url" placeholder="https://www.arcardio.app/acodyseyy" id="myInput" aria-describedby="inputGroup-sizing-default" style="height: 40px;"> <button class="cpy" onclick="myFunction()"><i class="far fa-clone"></i></button> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <a href="">
+                            <img class="img-fluid mt-1" src="img/sports7.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-5 mt-4">
+                        <a class="anchor" href="">
+                            <h6 class="text-center font-weight-bold">Formula 1 Holds Its Breath</h6>
+                            <p class="text-muted ml-4">It has not had a season like this in years because Lewis Hamilton has dominated. Not this year. He or Max will become champion on Sunday.</p>
+                        </a>
+                        <div class="sm-icons justify-content-center d-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook ml-1" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                            </svg>
+    
+                            <div class='justify-content-center'> 
+                                <a data-toggle="modal" data-target="#exampleModal"> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content col-12">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Share</h5> <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="icon-container1 d-flex">
+                                                <div class="smd"> <i class="img-thumbnail fab fa-reddit-alien fa-2x" style="color: #FF5700;background-color: #fdd9ce;"></i>
+                                                    <p>Reddit</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-discord fa-2x " style="color: #738ADB;background-color: #d8d8d8;"></i>
+                                                    <p>Discord</p>
+                                                </div>
+                                            </div>
+                                            <div class="icon-container2 d-flex">
+                                                <div class="smd"> <i class="img-thumbnail fab fa-whatsapp fa-2x" style="color: #25D366;background-color: #cef5dc;"></i>
+                                                    <p>Whatsapp</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-facebook-messenger fa-2x" style="color: #3b5998;background-color: #eceff5;"></i>
+                                                    <p>Messenger</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-telegram fa-2x" style="color: #4c6ef5;background-color: aliceblue"></i>
+                                                    <p>Telegram</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-weixin fa-2x" style="color: #7bb32e;background-color: #daf1bc;"></i>
+                                                    <p>WeChat</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer"> <label style="font-weight: 600">Page Link <span class="message"></span></label><br />
+                                            <div class="row"> <input class="col-10 ur" type="url" placeholder="https://www.arcardio.app/acodyseyy" id="myInput" aria-describedby="inputGroup-sizing-default" style="height: 40px;"> <button class="cpy" onclick="myFunction()"><i class="far fa-clone"></i></button> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <a href="">
+                            <img class="img-fluid mt-1" src="img/sports7.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-5 mt-4">
+                        <a class="anchor" href="">
+                            <h6 class="text-center font-weight-bold">Formula 1 Holds Its Breath</h6>
+                            <p class="text-muted ml-4">It has not had a season like this in years because Lewis Hamilton has dominated. Not this year. He or Max will become champion on Sunday.</p>
+                        </a>
+                        <div class="sm-icons justify-content-center d-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook ml-1" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                            </svg>
+    
+                            <div class='justify-content-center'> 
+                                <a data-toggle="modal" data-target="#exampleModal"> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content col-12">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Share</h5> <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="icon-container1 d-flex">
+                                                <div class="smd"> <i class="img-thumbnail fab fa-reddit-alien fa-2x" style="color: #FF5700;background-color: #fdd9ce;"></i>
+                                                    <p>Reddit</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-discord fa-2x " style="color: #738ADB;background-color: #d8d8d8;"></i>
+                                                    <p>Discord</p>
+                                                </div>
+                                            </div>
+                                            <div class="icon-container2 d-flex">
+                                                <div class="smd"> <i class="img-thumbnail fab fa-whatsapp fa-2x" style="color: #25D366;background-color: #cef5dc;"></i>
+                                                    <p>Whatsapp</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-facebook-messenger fa-2x" style="color: #3b5998;background-color: #eceff5;"></i>
+                                                    <p>Messenger</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-telegram fa-2x" style="color: #4c6ef5;background-color: aliceblue"></i>
+                                                    <p>Telegram</p>
+                                                </div>
+                                                <div class="smd"> <i class="img-thumbnail fab fa-weixin fa-2x" style="color: #7bb32e;background-color: #daf1bc;"></i>
+                                                    <p>WeChat</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer"> <label style="font-weight: 600">Page Link <span class="message"></span></label><br />
+                                            <div class="row"> <input class="col-10 ur" type="url" placeholder="https://www.arcardio.app/acodyseyy" id="myInput" aria-describedby="inputGroup-sizing-default" style="height: 40px;"> <button class="cpy" onclick="myFunction()"><i class="far fa-clone"></i></button> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <h3 class="font-weight-bold mt-2">The Newsportal</h3>
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm mt-2 text-center">
+                    <h4>About</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde in accusantium officiis alias. Dicta perferendis provident voluptatem doloribus ducimus sequi, at quis cupiditate a in quam sapiente odit earum modi!</p>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm mt-2 text-center">
+                    <h4 class="ml-4">News</h4>
+                    <ul class="nav-footer">
+                        <li class="list-unstyled">
+                            <a class="text-dark" href="">Home</a>
+                        </li>
+                        <li class="list-unstyled">
+                            <a class="text-dark" href="">Politics</a>
+                        </li>
+                        <li class="list-unstyled">
+                            <a class="text-dark" href="">Covid-19</a>
+                        </li>
+                        <li class="list-unstyled">
+                            <a class="text-dark" href="">Sports</a>
+                        </li>
+                        <li class="list-unstyled">
+                            <a class="text-dark" href="">Entertainment</a>
+                        </li>
+                        <li class="list-unstyled">
+                            <a class="text-dark" href="">Education</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm mt-2 text-center">
+                    <h4>Legal Disclaimer</h4>
+                    <ul>
+                        <li class="list-unstyled"><a class="text-dark p-1" href="" style="text-decoration: none;">Privacy Policy</a></li>
+                        <li class="list-unstyled"><a class="text-dark p-1" href="" style="text-decoration: none;">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm mt-2 text-center">
+                    <h4>Contact us</h4>     
+                    <ul class="login">
+                        <li class="list-unstyled"><a class="text-dark p-1" href="" style="text-decoration: none;">Login</a></li>
+                        <li class="list-unstyled"><a class="text-dark p-1" href="" style="text-decoration: none;">Register</a></li>
+                        <li class="list-unstyled"><a class="text-dark p-1" href="" style="text-decoration: none;">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

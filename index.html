@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>News Portal</title>
+    
+    <!-- bootstrap 4.5  specially for faq page -->
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+    body {
+      font-family: "Lato", sans-serif;
+    }
+    
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+      
+    .sidebar a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 20px;
+      color: black;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    .sidebar a:hover {
+      /* color: #f1f1f1; */
+      color: blue;
+    }
+    
+    .sidebar .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+      
+    .openbtn {
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #111;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+    }
+    
+    .openbtn:hover {
+      background-color: #444;
+    }
+    
+    #main {
+      transition: margin-left .5s;
+      padding: 16px;
+    }
+  
+    .my-4{
+      color: black;
+      border-bottom: 2px solid black;
+    }
+  
+    .navbar-nav{
+      font-family: khand,sans-serif;
+      font-weight: bold;
+    }
+  
+    .logo{
+      width: 200px;
+      height: 80px;
+      object-fit: cover;
+    }
+    .img-minister{
+        height: 150px;
+        width: 180px;
+    }
+    .text{
+        color: black;
+    }
+  </style>
+
+
+<body>
+    <div class="text-center">
+        <a href="#"><img class="img-fluid logo" src="img/newsportal.png" alt=""></a>
+    </div>
+
+    <div class="wrapper">
+        <div class="container">
+          <div class="row">
+            <div id="mySidebar" class="sidebar" style="background: white;">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="index.html">Home</a>
+                <a href="business.html">Business</a>
+                <a href="politics.html">Politics</a>
+                <a href="covid-19.html">Covid-19</a>
+                <a href="science-tech.html">Science & Tech</a>
+                <a href="#">Education</a>
+                <a href="health.html">Health</a>
+                <a href="entertainment.html">Entertainment</a>
+                <a href="sports.html">Sports</a>
+                <a href="society.html">Society</a>
+                <a href="blog.html">Blog</a>
+                <a href="#">Environment</a>
+            </div>
+            <div id="main">
+                <!-- <button class="openbtn btn-secondary" onclick="openNav()">☰</button> -->
+                <button class="btn btn-secondary" onclick="openNav()">☰</button>
+            </div>
+            <!-- <a href="{{ url('/') }}"><img class="img-fluid logo" src="img/newsportal.png" alt=""></a> -->
+                <img class="img-fluid" src="img/ads.jpg" alt="" style="height: 80px; width: 650px; object-fit: contain;"> 
+            <div class="socialmedia-icons mt-4" style="margin-left: 70px;">
+                <a class="p-1" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook text-dark" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                    </svg>
+                </a>
+                <a class="p-1" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google text-dark" viewBox="0 0 16 16">
+                        <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                    </svg>
+                </a>
+                <a class="p-1" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter text-dark" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                    </svg>
+                </a>
+            </div>
+          </div>
+      </div>
+      
+      <div class="container mt-2" style="border-bottom: 2px solid black; border-top: 1px solid gray;">
+        <div class="row d-flex justify-content-center">
+          <nav class="navbar navbar-expand-lg d-flex">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              ☰<span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link " href="/.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="business.html">Business</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="politics.html">Politics</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="covid.html">Covid-19</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="science&tech.html">Science & tech</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="health.html">Health</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="sports.html">Sports</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="entertainment.html">Entertainment</a>
+                </li>               
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="market.html">Market</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="society.html">Society</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="blog.html">Blog</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    
+      <div class="container">
+        <div class="row d-flex">
+          <div class="col-lg-2 col-md-2 col-sm-2">
+            <p class="font-weight-bold">Breaking News</p>
+          </div>
+          <div class="col-lg-10 col-md-10 col-sm-10">
+            <marquee width="90%" direction="left" height="20px">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse optio eos quidem atque tempora at reiciendis, tenetur ea aspernatur sapiente hic. Vitae obcaecati laborum quos, id at assumenda vel facere.
+            </marquee>
+          </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <section class="first-section add-border">
+            <div class="row">
+                <!-- <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 add-border"> -->
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5">
+                    <a class="anchor" href="{{ url('politics-news') }}">
+                        <img class="img-fluid mt-2" src="img/image.jpg" alt="" style="height: 500px; object-fit: cover;">
+                        <div class="text text-center">
+                            <h5 class="font-weight-bold">Sher bahadur deuba says he wont leave parliament</h5>
+                            <p class="text" style="font-family: nyt-imperial;">Lorem ipsum dolor sit amet consectetur adipisicing elit. At animi nam enim repellendus dolorem error, pariatur veniam blanditiis iure libero quo nemo? Quod reprehenderit consectetur aliquam error voluptates ipsum sapiente.</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                    <a class="anchor" href="{{ url('politics-newss') }}">
+                        <div class="d-flex">
+                            <img class="img-minister mt-2" src="img/image1.jpg" alt="">
+                            <div class="text-center mt-3">
+                                <h6 class="font-weight-bold text-center text">Oli says there's no place for Madhav k Nepal.</h6>
+                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <hr>
+                    <a class="anchor" href="">
+                        <div class="d-flex">
+                            <img class="img-minister mt-2" src="img/image1.jpg" alt="">
+                            <div class="mt-3">
+                                <h6 class="font-weight-bold text-center text">Oli says there's no place for Madhav k Nepal.</h6>
+                                <p class="text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <hr>
+                    <a class="anchor" href="">
+                        <div class="d-flex">
+                            <img class="img-minister mt-2" src="img/image1.jpg" alt="">
+                            <div class="mt-3">
+                                <h6 class="font-weight-bold text-center text">Oli says there's no place for Madhav k Nepal.</h6>
+                                <p class="text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </a> 
+                    <hr>              
+                    <a class="anchor" href="">
+                        <div class="d-flex">
+                            <img class="img-minister mt-2" src="img/image1.jpg" alt="">
+                            <div class="mt-3">
+                                <h6 class="font-weight-bold text-center text">Oli says there's no place for Madhav k Nepal.</h6>
+                                <p class="text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+                    <a href="">
+                        <img class="img-fluid mt-2" src="img/image4.gif" alt="" style="height: 450px;">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <hr>
+        
+        <!-- <section class="second-section add-border">
+            <div class="row">
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm">
+                    <a class="anchor" href="">
+                        <img class="img-fluid mt-2" src="img/image7.png" alt="" style="width: 800px; height: 400px; object-fit: contain;">
+                        <h5 class="font-weight-bold text-center text">There's a Confess between Oli and Deuba in the parliament.</h5>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque libero enim eveniet quae impedit, voluptatibus sapiente velit, laboriosam, ipsum eos quo dignissimos architecto dolorem! Mollitia velit harum reprehenderit sapiente odio.</p>
+                    </a>
+                </div>
+            </div>
+        </section> -->
+        
+    
+        <div class="row mt-2 add-border">
+            <div class="col-lg-12 col-md-12 col-sm-12 text-center image-ads mb-2">
+                    <img class="img-ads" src="img/image6.jpg" alt="">
+            </div>
+        </div>
+    
+        <div class="third-section  add-border m-0 p-0">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                    <a class="anchor" href="">
+                        <div class="border-bottom d-flex">
+                            <img class="img-minister mt-2" src="img/image1.jpg" alt="">
+                            <div class="text-center mt-3">
+                                <h6 class="font-weight-bold text">Result pending by Oli to confirm.</h6>
+                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="anchor" href="">
+                        <div class="border-bottom d-flex">
+                            <img class="img-minister mt-2" src="img/image1.jpg" alt="">
+                            <div class="text-center mt-3">
+                                <h6 class="font-weight-bold text">Result pending by Oli to confirm.</h6>
+                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="anchor" href="">
+                        <div class="d-flex">
+                            <img class="img-minister mt-2" src="img/image1.jpg" alt="">
+                            <div class="text-center mt-3">
+                                <h6 class="font-weight-bold text">Result pending by Oli to confirm.</h6>
+                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-lg-4 col-sm-4 col-lg-4">
+                    <a class="anchor" href="">
+                        <div class="border-bottom d-flex">
+                            <img class="img-minister mt-2" src="img/image1.jpg" alt="">
+                            <div class="text-center mt-3">
+                                <h6 class="font-weight-bold text">Result pending by Oli to confirm.</h6>
+                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="anchor" href="">
+                        <div class="border-bottom d-flex">
+                            <img class="img-minister mt-2" src="img/image1.jpg" alt="">
+                            <div class="text-center mt-3">
+                                <h6 class="font-weight-bold text">Result pending by Oli to confirm.</h6>
+                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="anchor" href="">
+                        <div class="d-flex">
+                            <img class="img-minister mt-2" src="img/image1.jpg" alt="">
+                            <div class="text-center mt-3">
+                                <h6 class="font-weight-bold text">Result pending by Oli to confirm.</h6>
+                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </a>               
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+                    <img class="img-fluid ads mt-4" src="img/image8.gif" alt="" style="height: 350px;">
+                </div>
+            </div>
+        </div>
+        
+        <section class="fourth-section m-0 p-0">
+            <div class="row">
+                <div class="col-md-8 add-border">
+                    <div class="row justify-content-center border-bottom">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <img class="img-fluid mt-1 mb-1" src="img/image25.jpg" alt="" style="width: 350px; height: 200px;">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-5 mt-6">
+                            <h6 class="text-center font-weight-bold mt-4">Mask is must in some places due to omicron</h6>
+                            <p class="text-muted ml-4">It has not had a season like this in years because Lewis Hamilton has dominated. Not this year. He or Max will become champion on Sunday.</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center border-bottom">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <img class="img-fluid mt-1 mb-1" src="img/image26.jpg" alt="" style="width: 350px; height: 200px;">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-5 mt-6">
+                            <h6 class="text-center font-weight-bold mt-4">Mask is must in some places due to omicron</h6>
+                            <p class="text-muted ml-4">It has not had a season like this in years because Lewis Hamilton has dominated. Not this year. He or Max will become champion on Sunday.</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mb-2">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <img class="img-fluid mt-1 mb-1" src="img/image27.jpg" alt="" style="width: 350px; height: 200px;">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-5 mt-6">
+                            <h6 class="text-center font-weight-bold mt-4">Mask is must in some places due to omicron</h6>
+                            <p class="text-muted ml-4">It has not had a season like this in years because Lewis Hamilton has dominated. Not this year. He or Max will become champion on Sunday.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                    <a class="anchor" href="">
+                        <div class="border-bottom d-flex">
+                            <img class="img-minister mt-2" src="img/image1.jpg" alt="">
+                            <div class="text-center mt-3">
+                                <h6 class="font-weight-bold text">No efficient development.</h6>
+                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="anchor" href="">
+                        <div class="border-bottom d-flex">
+                            <img class="img-minister mt-2" src="img/image1.jpg" alt="">
+                            <div class="text-center mt-3">
+                                <h6 class="font-weight-bold text">No efficient development.</h6>
+                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="anchor" href="">
+                        <div class="border-bottom d-flex">
+                            <img class="img-minister mt-2" src="img/image1.jpg" alt="">
+                            <div class="text-center mt-3">
+                                <h6 class="font-weight-bold text">No efficient development.</h6>
+                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="anchor" href="">
+                        <div class="border-bottom d-flex">
+                            <img class="img-minister mt-2" src="img/image1.jpg" alt="">
+                            <div class="text-center mt-3">
+                                <h6 class="font-weight-bold text">No efficient development.</h6>
+                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="fifth-section m-0 p-0">
+            <div class="row">
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 add-border">
+                    <div class="add-border">
+                        <a class="anchor" href="">
+                            <img class="img-fluid mt-2" src="img/image22.jpg" alt="" style="width: 750px; height: 300px; object-fit: contain;">
+                            <h6 class="text-center font-weight-bold">Prime Ministers of Nepal till now from last 20 years.</h6>
+                            <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis odio ut libero voluptatibus maiores reprehenderit maxime optio consequuntur asperiores, iusto perferendis perspiciatis laudantium facere atque qui illum, nulla illo possimus.</p>
+                        </a>
+                    </div>
+                    <div class="add-border">
+                        <a class="anchor" href="">
+                            <img class="img-fluid mt-2" src="img/image23.jpg" alt="" style="width: 750px; height: 300px; object-fit: contain;">
+                            <h6 class="text-center font-weight-bold">Prime Ministers of Nepal till now from last 20 years</h6>
+                            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda porro quam similique voluptatibus maiores et mollitia illo aspernatur, consectetur, repellendus iusto aut quisquam est vel adipisci harum. Eligendi, sed quidem?</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="anchor" href="">
+                            <img class="img-fluid mt-2" src="img/image14.jpg" alt="" style="width: 750px; height: 300px; object-fit: contain;">
+                            <h6 class="font-weight-bold text-center">Nepal Women Football reaches Division I</h6>
+                            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti aspernatur tempora deserunt dolorem ullam nulla quisquam culpa modi beatae laborum incidunt rem numquam enim ad, omnis esse officia at eaque.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 col-sm-4 add-border">
+                    <a class="anchor" href="">
+                        <div>
+                            <img class="img-fluid" src="img/image24.jpg" alt="">
+                        </div>
+                    </a>
+                    <a class="anchor" href="">
+                        <div class="mt-3 border-bottom">
+                            <h6 class="text-center font-weight-bold">Ministers busy in internal conflict</h6>
+                        </div>
+                    </a>
+                    <a class="anchor" href="">
+                        <div class="mt-3 border-bottom">
+                            <h6 class="text-center font-weight-bold">None of your caos : Minister</h6>
+                        </div>
+                    </a>
+                    <a class="anchor" href="">
+                        <div class="mt-3 border-bottom">
+                            <h6 class="text-center font-weight-bold">None of your caos : Minister</h6>
+                        </div>
+                    </a>
+                    <a class="anchor" href="">
+                        <div class="mt-3 border-bottom">
+                            <h6 class="text-center font-weight-bold">None of your caos : Minister</h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="sixth-section m-0 p-0">
+            <div class="row d-flex justify-content-center">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 add-border">
+                    <div class="card-body">
+                        <a class="anchor" href="">
+                            <h5 class="card-title font-weight-bold">Technology</h5>
+                            <img class="img-fluid" src="img/image15.jpg" alt="" style="width: 200px; height: 200px;">
+                            <div class="text-center">
+                                <h6 class="text-center font-weight-bold">Technology Today</h6>
+                                <p class="card-text text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 add-border">
+                    <div class="card-body">
+                        <a class="anchor" href="">
+                            <h5 class="card-title font-weight-bold">Science</h5>
+                            <img class="img-fluid" src="img/image16.jpg" alt="" style="width: 200px; height: 200px;">
+                            <div class="text-center">
+                                <h6 class="text-center font-weight-bold">Science Today</h6>
+                                <p class="card-text text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 add-border">
+                    <div class="card-body">
+                        <a class="anchor" href="">
+                            <h5 class="card-title font-weight-bold">Education</h5>
+                            <img class="img-fluid" src="img/image17.jpeg" alt="" style="width: 200px; height: 200px;">
+                            <div class="text-center">
+                                <h6 class="text-center font-weight-bold">Education Today</h6>
+                                <p class="card-text text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 add-border">
+                    <div class="card-body">
+                        <a class="anchor" href="">
+                            <h5 class="card-title font-weight-bold">Health</h5>
+                            <img class="img-fluid" src="img/image18.jpg" alt="" style="width: 200px; height: 200px;">
+                            <div class="text-center">
+                                <h6 class="text-center font-weight-bold">Health Today</h6>
+                                <p class="card-text text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+       
+        <section class="seventh-section add-border m-0 p-0">
+            <h4 class="font-weight-bold mt-2">Photo Gallery</h4>
+            <div class="row">
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-3 col-md-4 col-sm-4">
+                            <a class="anchor" href="">
+                                <img class="card-image" src="img/image15.jpg" alt="" style="width: 200px; height: 200px; border-radius: 10px;">
+                                <h6 class="text font-weight-bold">Ministers in Parliament</h6>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-3 col-md-4 col-sm-4">
+                            <a class="anchor" href="">
+                                <img class="card-image" src="img/image15.jpg" alt="" style="width: 200px; height: 200px; border-radius: 10px;">
+                                <h6 class="text font-weight-bold">Farmer & agriculture</h6>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-3 col-md-4 col-sm-4">
+                            <a class="anchor" href="">
+                                <img class="card-image" src="img/image15.jpg" alt="" style="width: 200px; height: 200px; border-radius: 10px;">
+                                <h6 class="text font-weight-bold">Roads on contruction</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-3 col-md-4 col-sm-4">
+                            <a class="anchor" href="">
+                                <img class="card-image" src="img/image15.jpg" alt="" style="width: 200px; height: 200px; border-radius: 10px;">
+                                <h6 class="text font-weight-bold">Roads on contruction</h6>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-3 col-md-4 col-sm-4">
+                            <a class="anchor" href="">
+                                <img class="card-image" src="img/image15.jpg" alt="" style="width: 200px; height: 200px; border-radius: 10px;">
+                                <h6 class="text font-weight-bold">Roads on contruction</h6>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-3 col-md-4 col-sm-4">
+                            <a class="anchor" href="">
+                                <img class="card-image" src="img/image15.jpg" alt="" style="width: 200px; height: 200px; border-radius: 10px;">
+                                <h6 class="text font-weight-bold">Roads on contruction</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="eigth-section add-border m-0 p-0">
+            <h4 class="font-weight-bold mt-2">Sports</h4>
+            <div class="row">
+                <div class="col-xl-5 col-md-5 col-sm-5">
+                    <img class="img-fluid" src="img/image12.jpg" alt="" style="width: 400px; height: 300px; object-fit: contain;">
+                    <h3 class="font-weight-bold">Nepal selected for Group A Division.</h3>
+                </div>
+                <div class="col-xl-7 col-md-7 col-sm-7 seventh-sub">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-4 col-sm-4">
+                            <a class="anchor" href="">
+                                <img src="img/image19.jpg" alt="" style="width: 200px; height: 150px; border-radius: 10px;">
+                                <p class="text font-weight-bold">Top 10 Highest paid athletes.</p>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-md-4 col-sm-4">
+                            <a class="anchor" href="">
+                                <img src="img/image20.jpg" alt="" style="width: 200px; height: 150px; border-radius: 10px;">
+                                <p class="text font-weight-bold">Top 10 richest sports in the world.</p>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-md-4 col-sm-4">
+                            <a class="anchor" href="">
+                                <img src="img/image21.jpg" alt="" style="width: 200px; height: 150px; border-radius: 10px;">
+                                <p class="text font-weight-bold">Top 10 unusual sports in the world.</p>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-xl-4 col-md-4 col-sm-4">
+                            <a class="anchor" href="#">
+                                <img src="img/image19.jpg" alt="" style="width: 200px; height: 150px; border-radius: 10px;">
+                                <p class="text font-weight-bold">Top 10 Highest paid athletes.</p>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-md-4 col-sm-4">
+                            <a class="anchor" href="#">
+                                <img src="img/image20.jpg" alt="" style="width: 200px; height: 150px; border-radius: 10px;">
+                                <p class="text font-weight-bold">Top 10 richest sports in the world.</p>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-md-4 col-sm-4">
+                            <a class="anchor" href="#">
+                                <img src="img/image21.jpg" alt="" style="width: 200px; height: 150px; border-radius: 10px;">
+                                <p class="text font-weight-bold">Top 10 unusual sports in the world.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="ninth-section add-border m-0 p-0">
+            <h4 class="font-weight-bold mt-2">Trending Videos</h4>
+            <div class="row">
+                <div class="col-xl-3 col-md-3 col-sm-3">
+                    <a class="anchor" href="">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg" allowfullscreen></iframe>
+                        </div>
+                        <h6 class="text-center font-weight-bold">Political Issues</h6>
+                    </a>       
+                </div>
+                <div class="col-xl-3 col-md-3 col-sm-3">
+                    <a class="anchor" href="">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg" allowfullscreen></iframe>
+                        </div>
+                        <h6 class="text-center font-weight-bold">Internal conflict</h6>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-md-3 col-sm-3">
+                    <a class="anchor" href="">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg" allowfullscreen></iframe>
+                        </div>
+                        <h6 class="text-center font-weight-bold">Propaganda</h6>
+                    </a>               
+                </div>
+                <div class="col-xl-3 col-md-3 col-sm-3">
+                    <a class="anchor" href="">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg" allowfullscreen></iframe>
+                        </div>
+                        <h6 class="text-center font-weight-bold">Less development</h6>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <h3 class="font-weight-bold mt-2">The Newsportal</h3>
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm mt-2 text-center">
+                    <h4>About</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde in accusantium officiis alias. Dicta perferendis provident voluptatem doloribus ducimus sequi, at quis cupiditate a in quam sapiente odit earum modi!</p>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm mt-2 text-center">
+                    <h4 class="ml-4">News</h4>
+                    <ul class="nav-footer">
+                        <li class="list-unstyled">
+                            <a class="text-dark" href="">Home</a>
+                        </li>
+                        <li class="list-unstyled">
+                            <a class="text-dark" href="">Politics</a>
+                        </li>
+                        <li class="list-unstyled">
+                            <a class="text-dark" href="">Covid-19</a>
+                        </li>
+                        <li class="list-unstyled">
+                            <a class="text-dark" href="">Sports</a>
+                        </li>
+                        <li class="list-unstyled">
+                            <a class="text-dark" href="">Entertainment</a>
+                        </li>
+                        <li class="list-unstyled">
+                            <a class="text-dark" href="">Education</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm mt-2 text-center">
+                    <h4>Legal Disclaimer</h4>
+                    <ul>
+                        <li class="list-unstyled"><a class="text-dark p-1" href="" style="text-decoration: none;">Privacy Policy</a></li>
+                        <li class="list-unstyled"><a class="text-dark p-1" href="" style="text-decoration: none;">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm mt-2 text-center">
+                    <h4>Contact us</h4>     
+                    <ul class="login">
+                        <li class="list-unstyled"><a class="text-dark p-1" href="" style="text-decoration: none;">Login</a></li>
+                        <li class="list-unstyled"><a class="text-dark p-1" href="" style="text-decoration: none;">Register</a></li>
+                        <li class="list-unstyled"><a class="text-dark p-1" href="" style="text-decoration: none;">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+   
+
+</body>
+</html>
